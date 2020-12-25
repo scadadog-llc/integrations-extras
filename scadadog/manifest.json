@@ -1,0 +1,29 @@
+{
+  "maintainer": "support@scadadog.com",
+  "manifest_version": "1.0.0",
+  "name": "scadadog",
+  "display_name": "Scadadog",
+  "short_description": "A Scadadog data collector for Datadog.",
+  "guid": "1b32f0d4-49ef-40fb-aec3-365e4e7cd6ee",
+  "support": "contrib",
+  "supported_os": [
+    "linux",
+    "mac_os",
+    "windows"
+  ],
+  "public_title": "Datadog-Scadadog Integration",
+  "categories": [
+    "data store"
+  ],
+  "creates_events": false,
+  "type": "check",
+  "is_public": true,
+  "metric_prefix": "scadadog.",
+  "integration_id": "scadadog",
+  "assets": {
+    "monitors": {},
+    "dashboards": {},
+    "service_checks": "assets/service_checks.json",
+    "metrics_metadata": "metadata.csv"
+  }
+}
