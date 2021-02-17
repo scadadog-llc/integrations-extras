@@ -1,0 +1,35 @@
+{
+  "display_name": "ScadaDog",
+  "maintainer": "raama@scadadog.com",
+  "manifest_version": "1.0.0",
+  "name": "scadadog",
+  "metric_prefix": "scadadog.",
+  "metric_to_check": "",
+  "creates_events": false,
+  "short_description": "",
+  "guid": "ce78db1d-3120-4d5a-b86a-42c3bc36ff83",
+  "support": "contrib",
+  "supported_os": [
+    "linux",
+    "mac_os",
+    "windows"
+  ],
+  "public_title": "ScadaDog",
+  "categories": [
+    ""
+  ],
+  "type": "check",
+  "is_public": false,
+  "integration_id": "scadadog",
+  "assets": {
+    "configuration": {
+      "spec": "assets/configuration/spec.yaml"
+    },
+    "dashboards": {},
+    "monitors": {},
+    "saved_views": {},
+    "service_checks": "assets/service_checks.json",
+    "logs": {},
+    "metrics_metadata": "metadata.csv"
+  }
+}
