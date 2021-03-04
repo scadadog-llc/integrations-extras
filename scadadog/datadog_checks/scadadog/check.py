@@ -31,20 +31,20 @@ class KepserverAPI():
             return response.json()
         return self.resp_code(status_code)
         
-    # HTTPS/1.1 200 OK 
-    # HTTPS/1.1 201 Created 
-    # HTTPS/1.1 202 Accepted 
-    # HTTPS/1.1 207 Multi-Status 
-    # HTTPS/1.1 400 Bad Request 
-    # HTTPS/1.1 401 Unauthorized 
-    # HTTPS/1.1 403 Forbidden 
-    # HTTPS/1.1 404 Not Found 
-    # HTTPS/1.1 429 Too Many Requests 
-    # HTTPS/1.1 500 Internal Server Error 
-    # HTTPS/1.1 503 Server Runtime Unavailable 
-    # HTTPS/1.1 504 Gateway Timeout 
-    # HTTPS/1.1 520 Unknown Error
     def resp_code(self,status_code) :
+        # HTTPS/1.1 200 OK 
+        # HTTPS/1.1 201 Created 
+        # HTTPS/1.1 202 Accepted 
+        # HTTPS/1.1 207 Multi-Status 
+        # HTTPS/1.1 400 Bad Request 
+        # HTTPS/1.1 401 Unauthorized 
+        # HTTPS/1.1 403 Forbidden 
+        # HTTPS/1.1 404 Not Found 
+        # HTTPS/1.1 429 Too Many Requests 
+        # HTTPS/1.1 500 Internal Server Error 
+        # HTTPS/1.1 503 Server Runtime Unavailable 
+        # HTTPS/1.1 504 Gateway Timeout 
+        # HTTPS/1.1 520 Unknown Error
         switcher = {
             200: "OK",
             201: "Created",
@@ -66,16 +66,14 @@ class KepserverAPI():
     def get_channels(self):
         url = "/config/v1/project/channels"
         return  self.call(url)
-      
 
     def get_devices(self,channel_name):
         url = f"/config/v1/project/channels/{channel_name}/devices"
         return self.call(url)
         
-
     def get_tags(self,channel_name,device_name):
         url = f"/config/v1/project/channels/{channel_name}/devices/{device_name}/tags"
-        return self.call(url
+        return self.call(url)
     
     def get_tag(self,channel_name,device_name,tag_name):
         url = f"/config/v1/project/channels/{channel_name}/devices/{device_name}/tags/{tag_name}"
